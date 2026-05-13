@@ -163,6 +163,14 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
+                <Link
+                  href="/o-nama"
+                  className="text-sm text-white/60 hover:text-gold transition-colors"
+                >
+                  {t("nav.about")}
+                </Link>
+              </li>
+              <li>
                 <a
                   href="#kako-funkcionise"
                   className="text-sm text-white/60 hover:text-gold transition-colors"
