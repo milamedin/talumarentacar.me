@@ -13,18 +13,10 @@ import {
 export default function FAQSection() {
   const { t } = useLanguage();
 
-  const faqs = [
-    { q: t("faq.q1"), a: t("faq.a1") },
-    { q: t("faq.q2"), a: t("faq.a2") },
-    { q: t("faq.q3"), a: t("faq.a3") },
-    { q: t("faq.q4"), a: t("faq.a4") },
-    { q: t("faq.q5"), a: t("faq.a5") },
-    { q: t("faq.q6"), a: t("faq.a6") },
-    { q: t("faq.q7"), a: t("faq.a7") },
-    { q: t("faq.q8"), a: t("faq.a8") },
-    { q: t("faq.q9"), a: t("faq.a9") },
-    { q: t("faq.q10"), a: t("faq.a10") },
-  ];
+  const faqs = Array.from({ length: 14 }, (_, i) => ({
+    q: t(`faq.q${i + 1}`),
+    a: t(`faq.a${i + 1}`),
+  }));
 
   return (
     <section id="faq" className="py-20 lg:py-28 bg-cream">

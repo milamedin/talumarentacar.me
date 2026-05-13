@@ -45,6 +45,7 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: t("nav.home") },
     { href: isHome ? "#flota" : "/#flota", label: fleetLabel },
+    { href: "/o-nama", label: t("nav.about") },
     { href: isHome ? "#lokacije" : "/#lokacije", label: t("nav.locations") },
     { href: "/blog", label: blogLabel },
     { href: isHome ? "#faq" : "/#faq", label: t("nav.faq") },

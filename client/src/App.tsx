@@ -20,6 +20,7 @@ const RentACarMontenegro = lazy(() => import("./pages/RentACarMontenegro"));
 const RentalServicePage = lazy(() => import("./pages/RentalServicePage"));
 const BlogIndex = lazy(() => import("@/pages/BlogIndex"));
 const BlogPost = lazy(() => import("@/pages/BlogPost"));
+const About = lazy(() => import("@/pages/About"));
 
 function RouteFallback() {
   // Minimal cream-colored placeholder — keeps layout from flashing white.
@@ -39,6 +40,8 @@ function Router() {
         {/* Blog */}
         <Route path="/blog" component={BlogIndex} />
         <Route path="/blog/:slug" component={BlogPost} />
+        <Route path="/o-nama" component={About} />
+        <Route path="/about" component={About} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
