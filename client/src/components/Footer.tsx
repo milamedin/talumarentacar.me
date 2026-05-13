@@ -61,15 +61,15 @@ export default function Footer() {
                 href="tel:+38269919192"
                 className="flex items-center gap-2 text-sm text-white/60 hover:text-gold transition-colors"
               >
-                <Phone className="w-4 h-4" />
-                +382 69 919 192
+                <Phone className="w-4 h-4 shrink-0" />
+                <span>+382 69 919 192</span>
               </a>
               <a
                 href="mailto:office@talumamontenegro.me"
-                className="flex items-center gap-2 text-sm text-white/60 hover:text-gold transition-colors"
+                className="flex items-center gap-2 text-sm text-white/60 hover:text-gold transition-colors min-w-0"
               >
-                <Mail className="w-4 h-4" />
-                office@talumamontenegro.me
+                <Mail className="w-4 h-4 shrink-0" />
+                <span className="truncate">office@talumamontenegro.me</span>
               </a>
               <div className="flex items-start gap-2 text-sm text-white/60">
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
@@ -193,23 +193,21 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div className="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
           <p className="text-xs text-white/40">
             &copy; {new Date().getFullYear()} Taluma rent a car. {t("footer.rights")}
           </p>
-          <div className="flex items-center gap-4">
+          <p className="text-xs text-white/40">
+            Developed and designed by{" "}
             <a
-              href="/images/locations/CREDITS.txt"
+              href="https://www.mmdigital.me"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-white/40 hover:text-white/60 transition-colors"
+              className="text-white/60 hover:text-gold transition-colors font-medium"
             >
-              {language === "me" ? "Zasluge za fotografije" : language === "de" ? "Bildnachweise" : language === "ru" ? "Авторы фото" : language === "fr" ? "Crédits photo" : language === "pl" ? "Autorzy zdjęć" : language === "tr" ? "Fotoğraf kredileri" : "Photo credits"}
+              MM Digital
             </a>
-            <p className="text-xs text-white/40">
-              Podgorica, Crna Gora
-            </p>
-          </div>
+          </p>
         </div>
       </div>
     </footer>
