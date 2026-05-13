@@ -14,7 +14,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { ArrowLeft, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
 
-const HERO_IMG = "/images/locations/taluma-hero.jpg";
+const HERO_IMG = "/images/locations/taluma-hero-1200.webp";
 
 export default function RentACarMontenegro() {
   const { language } = useLanguage();

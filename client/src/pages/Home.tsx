@@ -1,17 +1,21 @@
 /*
  * Taluma rent a car
- * Home page: Hero → Trust → How → Locations → Services → Blog → FAQ → CTA → Footer
+ * Home page: Hero → Fleet → Trust → How → Locations → Blog → FAQ → CTA → Footer
+ * BlogPreview is lazy-loaded so the 95KB blogPosts module stays out of the
+ * initial bundle (still shows when user scrolls down).
  */
+import { lazy, Suspense } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import TrustSection from "@/components/TrustSection";
 import HowItWorks from "@/components/HowItWorks";
 import FleetSection from "@/components/FleetSection";
 import LocationsSection from "@/components/LocationsSection";
-import BlogPreview from "@/components/BlogPreview";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+
+const BlogPreview = lazy(() => import("@/components/BlogPreview"));
 
 export default function Home() {
   return (
@@ -23,7 +27,9 @@ export default function Home() {
         <TrustSection />
         <HowItWorks />
         <LocationsSection />
-        <BlogPreview />
+        <Suspense fallback={<div className="min-h-[200px]" />}>
+          <BlogPreview />
+        </Suspense>
         <FAQSection />
         <CTASection />
       </main>

@@ -11,11 +11,11 @@ import { motion } from "framer-motion";
 // Hero is the LCP element. Provide three sizes via srcSet so mobile gets
 // 117KB (800px wide) instead of 918KB (2400px). The browser picks the
 // smallest variant that still fills the viewport at the user's DPR.
-const HERO_RENT_SRC = "/images/locations/taluma-hero-1200.jpg";
+const HERO_RENT_SRC = "/images/locations/taluma-hero-1200.webp";
 const HERO_RENT_SRCSET = [
-  "/images/locations/taluma-hero-800.jpg 800w",
-  "/images/locations/taluma-hero-1200.jpg 1200w",
-  "/images/locations/taluma-hero-2000.jpg 2000w",
+  "/images/locations/taluma-hero-800.webp 800w",
+  "/images/locations/taluma-hero-1200.webp 1200w",
+  "/images/locations/taluma-hero-2000.webp 2000w",
 ].join(", ");
 const HERO_TRANSFER_SRC = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028316391/F6tufssh9csNoGMxi69exc/hero-transfer-service-8gLcWWgYwxuCvv4tctvqoz.webp";
 

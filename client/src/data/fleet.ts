@@ -43,5 +43,5 @@ export const fleet: FleetVehicle[] = [
 
 export function fleetImages(v: FleetVehicle): string[] {
   if (v.imageCount === 0) return [];
-  return Array.from({ length: v.imageCount }, (_, i) => `/images/fleet/${v.slug}/${i + 1}.jpg`);
+  return Array.from({ length: v.imageCount }, (_, i) => `/images/fleet/${v.slug}/${i + 1}.webp`);
 }

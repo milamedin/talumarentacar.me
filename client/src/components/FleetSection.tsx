@@ -107,8 +107,10 @@ export default function FleetSection() {
                   )}
                   {hasPhotos ? (
                     <img
-                      src={`/images/fleet/${v.slug}/thumb.jpg`}
+                      src={`/images/fleet/${v.slug}/thumb.webp`}
                       alt={v.name}
+                      width={600}
+                      height={600}
                       loading="lazy"
                       decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

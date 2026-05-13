@@ -68,8 +68,10 @@ export default function FleetTeaser({ seed = "default" }: { seed?: string }) {
               <div className="aspect-square bg-gradient-to-br from-cream-dark to-cream flex items-center justify-center overflow-hidden">
                 {hasPhotos ? (
                   <img
-                    src={`/images/fleet/${v.slug}/thumb.jpg`}
+                    src={`/images/fleet/${v.slug}/thumb.webp`}
                     alt={v.name}
+                    width={600}
+                    height={600}
                     loading="lazy"
                     decoding="async"
                     className="w-full h-full object-cover"
