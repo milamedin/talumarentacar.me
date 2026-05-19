@@ -70,9 +70,6 @@ export default function FleetLightbox({ vehicle, onClose }: Props) {
             <div className="font-display font-bold text-lg leading-tight">
               {vehicle.name}
             </div>
-            <div className="text-xs text-white/60">
-              {t("location.from")} €{vehicle.priceFrom}{t("location.perDay")}
-            </div>
           </div>
           <div className="flex items-center gap-2">
             <a

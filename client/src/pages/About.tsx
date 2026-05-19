@@ -56,9 +56,8 @@ export default function About() {
       Icon: Car,
       titleMe: "Ekonomska klasa",
       titleEn: "Economy Cars",
-      descMe: "Pristupačna, pouzdana i ekonomična vozila za svakodnevnu vožnju i putovanja prilagođena budžetu. Idealna za grad i kraće relacije. Cijene od 25€/dan.",
-      descEn: "Affordable, reliable and fuel-efficient vehicles ideal for everyday use and budget-friendly travel. Perfect for city driving and short trips, with prices starting from €25/day.",
-      priceFrom: 25,
+      descMe: "Pristupačna, pouzdana i ekonomična vozila za svakodnevnu vožnju i putovanja prilagođena budžetu. Idealna za grad i kraće relacije.",
+      descEn: "Affordable, reliable and fuel-efficient vehicles ideal for everyday use and budget-friendly travel. Perfect for city driving and short trips.",
     },
     {
       Icon: Mountain,
@@ -66,15 +65,13 @@ export default function About() {
       titleEn: "SUVs & 4×4",
       descMe: "Prostrana, sigurna i udobna vozila za duža putovanja i različite uslove na putu. Idealna za porodice, grupe i obilazak primorja i planinskih predjela.",
       descEn: "Spacious, safe and comfortable vehicles designed for longer journeys and diverse road conditions. Ideal for families, groups and exploring both the coast and mountainous areas of Montenegro.",
-      priceFrom: 60,
     },
     {
       Icon: Crown,
       titleMe: "Luksuzna vozila",
       titleEn: "Luxury Cars",
-      descMe: "Vrhunska vozila koja nude maksimalnu udobnost, stil i performanse. Pogodna za poslovna putovanja, VIP transfere i posebne prilike. Modeli do 150€/dan.",
-      descEn: "High-end vehicles offering maximum comfort, style and performance. Suitable for business trips, VIP transfers and special occasions, with models available up to €150/day.",
-      priceFrom: 90,
+      descMe: "Vrhunska vozila koja nude maksimalnu udobnost, stil i performanse. Pogodna za poslovna putovanja, VIP transfere i posebne prilike.",
+      descEn: "High-end vehicles offering maximum comfort, style and performance. Suitable for business trips, VIP transfers and special occasions.",
     },
     {
       Icon: Wind,
@@ -82,7 +79,6 @@ export default function About() {
       titleEn: "Cabrio & Sport Models",
       descMe: "Stilska i dinamična vozila za nezaboravnu vožnju duž primorja. Savršena za scenske rute, ljetna putovanja i uzbudljiviji način otkrivanja Crne Gore.",
       descEn: "Stylish and dynamic cars designed for an enjoyable driving experience along the coast. Perfect for scenic routes, summer trips and a more exciting way to explore Montenegro.",
-      priceFrom: 49,
     },
     {
       Icon: Users,
@@ -90,7 +86,6 @@ export default function About() {
       titleEn: "Vans",
       descMe: "Praktična i prostrana vozila idealna za veće grupe, porodice ili putnike kojima treba dodatni prostor za prtljag. Udobno i pouzdano za kraće i duže relacije.",
       descEn: "Practical and spacious vehicles ideal for larger groups, families or travelers who need extra luggage space. Comfortable, reliable and suitable for both short and long-distance trips.",
-      priceFrom: 49,
     },
   ];
 
@@ -223,8 +218,8 @@ export default function About() {
                 </p>
                 <p>
                   {isMe
-                    ? "Nudimo širok izbor vozila za svaku potrebu i budžet, uključujući ekonomska, SUV, luksuzna vozila i vanove. Cijene u našoj floti kreću od svega 25€ do 150€ po danu — birate vozilo koje savršeno odgovara vašem putovanju."
-                    : "We offer a wide range of vehicles for every need and budget, including economy cars, SUVs, luxury vehicles and vans. Our fleet prices start from just €25 up to €150 per day, giving you the flexibility to choose the perfect car for your trip."}
+                    ? "Nudimo širok izbor vozila za svaku potrebu i budžet — od ekonomskih, preko SUV i luksuznih, do vanova. Cijene u floti kreću se od 24.99€ do 149.99€ po danu, pa birate vozilo koje savršeno odgovara vašem putovanju."
+                    : "We offer a wide range of vehicles for every need and budget — from economy cars and SUVs to luxury vehicles and vans. Our fleet prices range from €24.99 to €149.99 per day, giving you the flexibility to choose the perfect car for your trip."}
                 </p>
                 <p>
                   {isMe
