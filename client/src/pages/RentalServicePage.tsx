@@ -111,16 +111,16 @@ const rentalServices: RentalService[] = [
     locations: ["Podgorica", "Tivat", "Budva", "Bar", "Nikšić"],
     features: [
       { me: "Direktna cijena iz Taluma flote sa 60+ vozila", en: "Direct prices from Taluma fleet" },
-      { me: "Ekonomija vozila od 40€/dan", en: "Economy vehicles from €40/day" },
+      { me: "Ekonomska klasa vozila", en: "Economy class vehicles" },
       { me: "Bez skrivenih troškova", en: "No hidden fees" },
       { me: "Puno osiguranje uključeno", en: "Full insurance included" },
     ],
     faqMe: [
-      { q: "Koji je najjeftiniji auto za iznajmljivanje?", a: "Najjeftinija opcija su ekonomija vozila poput Fiat Panda ili Dacia Sandero, sa cijenama od 40€/dan u sezoni. Što ranije rezervišete, cijene mogu biti niže!" },
+      { q: "Koji je najjeftiniji auto za iznajmljivanje?", a: "Najjeftinija opcija su ekonomska vozila poput VW Polo, Golf 6 ili Chevrolet Aveo. Što ranije rezervišete, cijene mogu biti povoljnije — kontaktirajte nas za tačnu ponudu." },
       { q: "Da li ima skrivenih troškova?", a: "Ne, Taluma nudi transparentne cijene. Osiguranje i PDV su uključeni." },
     ],
     faqEn: [
-      { q: "What is the cheapest car to rent?", a: "The cheapest option is economy vehicles like Fiat Panda or Dacia Sandero, with prices from €40/day in season. The earlier you book, the lower the price can be!" },
+      { q: "What is the cheapest car to rent?", a: "The cheapest option is economy vehicles like VW Polo, Golf 6 or Chevrolet Aveo. The earlier you book, the lower the price can be — contact us for an exact offer." },
       { q: "Are there hidden fees?", a: "No, Taluma offers transparent pricing. Insurance and VAT are included." },
     ],
     formFields: [

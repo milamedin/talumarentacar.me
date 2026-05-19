@@ -67,8 +67,8 @@ export default function RentACarMontenegro() {
             </h1>
             <p className="text-white/80 text-lg max-w-2xl leading-relaxed">
               {language === "me"
-                ? "Taluma rent a car — lokalna agencija iz Podgorice sa flotom od 60+ vozila. Preuzimanje na aerodromima Podgorica i Tivat, ili dostava na adresu po vašem izboru. Cijene od 20€ dnevno sa punim osiguranjem."
-                : "Taluma rent a car — local agency based in Podgorica with a fleet of 60+ vehicles. Pick up at Podgorica and Tivat airports, or delivery to any address in Montenegro. Prices from €20/day with full insurance."}
+                ? "Taluma rent a car — lokalna agencija iz Podgorice sa flotom od 60+ vozila. Preuzimanje na aerodromima Podgorica i Tivat, ili dostava na adresu po vašem izboru po cijeloj Crnoj Gori."
+                : "Taluma rent a car — local agency based in Podgorica with a fleet of 60+ vehicles. Pick up at Podgorica and Tivat airports, or delivery to any address in Montenegro."}
             </p>
           </motion.div>
         </div>

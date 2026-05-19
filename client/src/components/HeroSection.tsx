@@ -172,11 +172,17 @@ export default function HeroSection() {
               {activeTab === "rent" ? t("hero.title.rent") : t("hero.title.transfer")}
             </h1>
 
-            <p className="text-white/80 text-lg lg:text-xl leading-relaxed max-w-xl mb-8">
+            <p className="text-white/80 text-lg lg:text-xl leading-relaxed max-w-xl mb-4">
               {activeTab === "rent"
                 ? t("hero.subtitle.rent")
                 : t("hero.subtitle.transfer")}
             </p>
+
+            {activeTab === "rent" && (
+              <p className="inline-block bg-white/10 backdrop-blur-sm border border-gold/30 text-gold font-display font-semibold text-base lg:text-lg rounded-full px-4 py-1.5 mb-8">
+                {t("hero.priceRange")}
+              </p>
+            )}
 
             {/* Stats */}
             <div className="flex flex-wrap gap-6 lg:gap-10">
