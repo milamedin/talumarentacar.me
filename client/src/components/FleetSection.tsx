@@ -13,7 +13,7 @@ const WHATSAPP_NUMBER = "38269919192";
 
 type Filter = "all" | FleetCategory;
 
-const filterOrder: Filter[] = ["all", "suv", "luxury", "cabrio", "sedan", "compact", "family"];
+const filterOrder: Filter[] = ["all", "economy", "sedan", "suv", "cabrio", "van"];
 
 export default function FleetSection() {
   const { language, t } = useLanguage();
@@ -71,7 +71,7 @@ export default function FleetSection() {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {filtered.map((v, i) => {
-            const isLuxury = v.categories.includes("luxury");
+            const isLuxury = v.priceFrom >= 70;
             const hasPhotos = v.imageCount > 0;
             const message = encodeURIComponent(
               `Zdravo, zanima me iznajmljivanje vozila ${v.name} iz Taluma flote.`
@@ -139,24 +139,13 @@ export default function FleetSection() {
                       {v.seats} {seatsLabel}
                     </span>
                   </div>
-                  <div className="mt-4 flex items-end justify-between gap-3">
-                    <div>
-                      <div className="text-xs text-muted-foreground leading-none">
-                        {t("location.from")}
-                      </div>
-                      <div className="font-display font-extrabold text-2xl text-forest leading-tight">
-                        €{v.priceFrom}
-                        <span className="text-sm font-medium text-muted-foreground">
-                          {t("location.perDay")}
-                        </span>
-                      </div>
-                    </div>
+                  <div className="mt-4">
                     <a
                       href={`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`WhatsApp ${v.name}`}
-                      className="inline-flex items-center gap-1.5 bg-[#25D366] hover:bg-[#20BD5A] text-white text-sm font-semibold px-3.5 py-2 rounded-lg transition-all hover:shadow-md active:scale-95"
+                      className="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-all hover:shadow-md active:scale-95"
                     >
                       <MessageCircle className="w-4 h-4" />
                       {t("fleet.reserve")}

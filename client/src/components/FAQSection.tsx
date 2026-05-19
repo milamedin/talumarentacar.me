@@ -13,9 +13,10 @@ import {
 export default function FAQSection() {
   const { t } = useLanguage();
 
-  const faqs = Array.from({ length: 14 }, (_, i) => ({
-    q: t(`faq.q${i + 1}`),
-    a: t(`faq.a${i + 1}`),
+  // Indices 1..14 minus 9 (SIM card / internet question removed).
+  const faqs = [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14].map((i) => ({
+    q: t(`faq.q${i}`),
+    a: t(`faq.a${i}`),
   }));
 
   return (
