@@ -304,14 +304,9 @@ export default function About() {
                 <h3 className="font-display font-bold text-lg text-forest mb-2">
                   {isMe ? c.titleMe : c.titleEn}
                 </h3>
-                <p className="text-sm text-foreground/70 leading-relaxed mb-4">
+                <p className="text-sm text-foreground/70 leading-relaxed">
                   {isMe ? c.descMe : c.descEn}
                 </p>
-                <div className="text-sm text-gold-dark font-semibold">
-                  {isMe ? "od " : "from "}
-                  <span className="font-display font-bold text-base">€{c.priceFrom}</span>
-                  {isMe ? "/dan" : "/day"}
-                </div>
               </motion.div>
             ))}
           </div>
