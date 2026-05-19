@@ -25,7 +25,7 @@ export default function RentACarMontenegro() {
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Rent a car in Montenegro from €20/day. Direct rates from Taluma fleet of 60+ vehicles. Podgorica, Budva, Tivat, Kotor. No hidden fees, full insurance. Book now!"
+        "Rent a car in Montenegro with Taluma — fleet of 60+ vehicles, prices from €24.99 to €149.99/day. Podgorica, Budva, Tivat, Kotor. No deposit, no hidden fees."
       );
     }
     window.scrollTo(0, 0);

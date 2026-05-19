@@ -117,9 +117,6 @@ export default function LocationsSection() {
                     <MapPin className="w-4 h-4 text-white" />
                     <span className="text-white font-semibold text-lg">{loc.name}</span>
                   </div>
-                  <div className="absolute top-3 right-3 bg-gold/90 text-white text-xs font-semibold px-2.5 py-1 rounded-full">
-                    {t("location.from")} €{loc.priceFrom}{t("location.perDay")}
-                  </div>
                 </div>
                 <div className="p-3.5 flex items-center justify-between">
                   <span className="text-xs text-muted-foreground">
