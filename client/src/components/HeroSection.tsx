@@ -179,7 +179,7 @@ export default function HeroSection() {
             </p>
 
             {activeTab === "rent" && (
-              <p className="inline-block bg-white/10 backdrop-blur-sm border border-gold/30 text-gold font-display font-semibold text-base lg:text-lg rounded-full px-4 py-1.5 mb-8">
+              <p className="inline-block bg-white text-forest-dark font-display font-bold text-base lg:text-lg rounded-full px-5 py-2 mb-8 shadow-xl shadow-black/20">
                 {t("hero.priceRange")}
               </p>
             )}
